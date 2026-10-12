@@ -1,5 +1,7 @@
 # Meta Inbox
 
+[![GitHub repo](https://img.shields.io/badge/GitHub-askmehta789%2FMessengerai-181717?logo=github)](https://github.com/askmehta789/Messengerai)
+
 A shared inbox for all your Facebook Pages' Messenger chats, with AI auto-replies from the AI provider you choose (OpenAI / ChatGPT, Google Gemini, Anthropic Claude, or any OpenAI-compatible API such as DeepSeek or Groq).
 
 - Connect any number of Facebook Pages with one "Login with Facebook".
