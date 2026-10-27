@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/meta-inbox/
+    - export DEPLOYPATH=$HOME/luprah.site/metaai/
     - export REPOPATH=$PWD
     - if [ "$(cd "$REPOPATH" && pwd)" != "$(cd "$DEPLOYPATH" && pwd 2>/dev/null)" ]; then /bin/cp -R $REPOPATH/. $DEPLOYPATH; fi
     - /usr/local/bin/php $DEPLOYPATH/artisan migrate --force
