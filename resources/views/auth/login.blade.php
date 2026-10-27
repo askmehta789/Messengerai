@@ -22,5 +22,6 @@
     @error('email')<p class="error">{{ $message }}</p>@enderror
 
     <button class="btn btn-primary btn-block" style="margin-top:8px">Log in</button>
+    <p class="muted" style="margin-top:12px"><a href="{{ route('password.request') }}">Forgot password?</a></p>
 </form>
 @endsection
