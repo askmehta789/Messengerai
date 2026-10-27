@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/meta-inbox/
+    - export REPOPATH=$PWD
+    - if [ "$(cd "$REPOPATH" && pwd)" != "$(cd "$DEPLOYPATH" && pwd 2>/dev/null)" ]; then /bin/cp -R $REPOPATH/. $DEPLOYPATH; fi
+    - /usr/local/bin/php $DEPLOYPATH/artisan migrate --force
+    - /usr/local/bin/php $DEPLOYPATH/artisan config:cache
+    - /usr/local/bin/php $DEPLOYPATH/artisan route:cache
+    - /usr/local/bin/php $DEPLOYPATH/artisan view:cache
